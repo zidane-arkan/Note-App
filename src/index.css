@@ -1,4 +1,51 @@
-body {
-  margin: 0;
-  padding: 0;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+
+*,
+html {
+  font-family: "Raleway", sans-serif !important;
+}
+button {
+  color: #fff;
+  font-weight: 600;
+}
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #232631 !important;
+}
+h3 {
+  font-size: 40px;
+  font-weight: 600;
+}
+p,
+span {
+  font-size: 15px;
+  color: #656565;
+}
+input {
+  padding: 1rem;
+  width: 100%;
+  border-radius: 0.75rem;
+}
+span {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+h4 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.card__box{
+  @apply flex w-[22%] flex-col justify-between gap-8 px-6 py-8 rounded-xl text-left;
+}
+.card__active{
+  @apply bg-[#e9e481];
+}
+
+.card__button img{
+  cursor: pointer;
 }
